@@ -3,19 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Wellcome to codingwjl&#39;blog! | codingwjl&#39;blog</title>
+  <title>WKWebView iOS10下显示不全的问题 | codingwjl&#39;blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+  <meta name="description" content="解决WKWebView在iOS10下显示不全的问题">
+<meta name="keywords" content="WKWebView,iOS10">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Wellcome to codingwjl&#39;blog!">
-<meta property="og:url" content="https://codingwjl.github.io/2018/03/07/hello-world/index.html">
+<meta property="og:title" content="WKWebView iOS10下显示不全的问题">
+<meta property="og:url" content="https://codingwjl.github.io/2018/03/08/WKWebView-iOS10/index.html">
 <meta property="og:site_name" content="codingwjl&#39;blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta property="og:description" content="解决WKWebView在iOS10下显示不全的问题">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-08T09:00:41.559Z">
+<meta property="og:updated_time" content="2018-03-08T09:49:15.293Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Wellcome to codingwjl&#39;blog!">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta name="twitter:title" content="WKWebView iOS10下显示不全的问题">
+<meta name="twitter:description" content="解决WKWebView在iOS10下显示不全的问题">
   
     <link rel="alternative" href="/atom.xml" title="codingwjl&#39;blog" type="application/atom+xml">
   
@@ -139,7 +140,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/嘎嘎嘎/" style="font-size: 10px;">嘎嘎嘎</a>
+                        <a href="/tags/WKWebView/" style="font-size: 10px;">WKWebView</a> <a href="/tags/iOS10/" style="font-size: 10px;">iOS10</a> <a href="/tags/嘎嘎嘎/" style="font-size: 10px;">嘎嘎嘎</a>
                     </div>
                 </section>
                 
@@ -209,11 +210,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-WKWebView-iOS10" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2018/03/07/hello-world/" class="article-date">
-      <time datetime="2018-03-07T15:29:02.604Z" itemprop="datePublished">2018-03-07</time>
+      <a href="/2018/03/08/WKWebView-iOS10/" class="article-date">
+      <time datetime="2018-03-08T09:40:12.000Z" itemprop="datePublished">2018-03-08</time>
 </a>
     </div>
   
@@ -226,7 +227,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Wellcome to codingwjl&#39;blog!
+      WKWebView iOS10下显示不全的问题
     </h1>
   
 
@@ -236,6 +237,10 @@
         
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WKWebView/">WKWebView</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS10/">iOS10</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -243,15 +248,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.<br><a id="more"></a></p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>解决WKWebView在iOS10下显示不全的问题<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">-(void)scrollViewDidScroll:(UIScrollView *)scrollView</span><br><span class="line">&#123;</span><br><span class="line">    if (scrollView == self.tableView) &#123;</span><br><span class="line">        [self.webView setNeedsLayout];</span><br><span class="line">    &#125;</span><br><span class="line">    //...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
       
@@ -307,13 +304,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2018/03/07/hello-world/">Wellcome to codingwjl&#39;blog!</a></p>
+        <p><span>本文标题:</span><a href="/2018/03/08/WKWebView-iOS10/">WKWebView iOS10下显示不全的问题</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 codingwjl 的个人博客">codingwjl</a></p>
-        <p><span>发布时间:</span>2018年03月07日 - 23时29分</p>
-        <p><span>最后更新:</span>2018年03月08日 - 17时00分</p>
+        <p><span>发布时间:</span>2018年03月08日 - 17时40分</p>
+        <p><span>最后更新:</span>2018年03月08日 - 17时49分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2018/03/07/hello-world/" title="Wellcome to codingwjl&#39;blog!">https://codingwjl.github.io/2018/03/07/hello-world/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://codingwjl.github.io/2018/03/07/hello-world/　　作者: codingwjl" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2018/03/08/WKWebView-iOS10/" title="WKWebView iOS10下显示不全的问题">https://codingwjl.github.io/2018/03/08/WKWebView-iOS10/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://codingwjl.github.io/2018/03/08/WKWebView-iOS10/　　作者: codingwjl" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -326,15 +323,11 @@
 
 <nav id="article-nav">
   
-    <a href="/2018/03/08/Hello-Hexo/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          Hello Hexo
-        
-      </div>
-    </a>
   
+    <a href="/2018/03/08/Hello-Hexo/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello Hexo</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
   
 </nav>
 
@@ -343,7 +336,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+    
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -409,16 +402,16 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2018/03/08/Hello-Hexo/" title="上一篇: Hello Hexo">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2018/03/08/Hello-Hexo/" title="下一篇: Hello Hexo">
+                <i class="fa fa-angle-right"></i>
+            </a>
         
     </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/03/08/Hello-Hexo/">Hello Hexo</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/07/hello-world/">Wellcome to codingwjl'blog!</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/03/08/WKWebView-iOS10/">WKWebView iOS10下显示不全的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/08/Hello-Hexo/">Hello Hexo</a></li></ul>
     <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");
