@@ -202,6 +202,69 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-cloudflare-https" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/03/10/cloudflare-https/" class="article-date">
+      <time datetime="2018-03-10T14:53:39.000Z" itemprop="datePublished">2018-03-10</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/10/cloudflare-https/">godaddy+cloudflare实现域名访问+https</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>选择这套方案是考虑到在godaddy注册可以不用备案,另外godaddy也支持支付宝和银联,这一点非常友好.而cloudflare可以免费实现https.</p>
+<h4 id="申请域名"><a href="#申请域名" class="headerlink" title="申请域名"></a>申请域名</h4><p>前往<a href="https://sso.godaddy.com" target="_blank" rel="noopener">godaddy</a>注册账号,搜索自己喜欢的域名,加入购物车,支付.</p>
+<h4 id="设置DNS"><a href="#设置DNS" class="headerlink" title="设置DNS"></a>设置DNS</h4><p>前往<a href="https://www.cloudflare.com" target="_blank" rel="noopener">cloudflare</a>注册账号,填入你申请的域名,然后你会得到cloudflare的DNS地址(lynn.ns.cloudflare.com, naomi.ns.cloudflare.com),把这两个DNS填写到godaddy的DNS主机.<br>进入godaddy域名管理器,点击DNS选择管理区域<br><img src="QQ20180310-231310.png" alt="管理区域"><br>输入自己的域名,点击搜索,在结果页下拉,选择域名服务器点击更改,填写cloudflare的DNS地址点击保存.至此godaddy操作完成.(等待DNS全球刷新需要0-72小时)<br><img src="QQ20180310-231418.png" alt="修改DNS"></p>
+<h4 id="设置https"><a href="#设置https" class="headerlink" title="设置https"></a>设置https</h4><p>1,添加一个CNMAE指向自己的博客,添加一个A类型指向自己博客的ip地址(可以ping xxxx.github.io 得到ip)<br><img src="QQ20180310-232324.png" alt="设置dns"><br>Tips:本博客基于Hexo.所以直接在/source文件下建立CNAME文件.不要后缀名(mac可使用终端命令touch CNAME新建),然后打开CNAME文件写入你的域名,然后更新博客<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure></p>
+<p>2,然后切换到Crypto选择Flexible(因为GItHub Page不支持安装SSL证书,所以我们选择Flexible模式就可以)<br>Tips:在Cloudflare的“加密”中可以一键开启SSL，这个SSL总共四种模式：关闭、Flexible SSL、Full SSL、Full SSL (strict)、Strict (SSL-Only Origin Pull)。(更多关于cloudflare介绍<a href="https://www.freehao123.com/cloudflare-cdn-ssl/" target="_blank" rel="noopener">请点我</a>)</p>
+<blockquote>
+<p>Flexible SSL：您的网站访问者和Cloudflare之间有加密连接，但是从Cloudflare到您的服务器没有加密。即半程加密。优点在于：你的网站不需要SSL证书，用户也能实现SSL加密访问。<br>Full SSL：全程加密，即从你的网站到CDN服务器再到用户，全程都是SSL加密的。优点在于：只要你的服务器有SSL证书（不管是自签名证书还是购买的SSL），就可以实现SSL加密访问。<br>Full SSL (strict)：全程加密，它与Full SSL的区别在于你的服务器必须是安装了那些已经受信任的SSL证书（即购买的SSL证书），否则无法开启SSL加密访问。<br>Strict (SSL-Only Origin Pull)：企业模式。自动将所有的Http转化为Https加密访问，要求你的服务器安装了受信任的有效的SSL证书。</p>
+</blockquote>
+<p><img src="QQ20180310454578.png" alt="ssl_flexible"><br>3,在Page Rules 中设置路由规则。一般情况下，利用Always use https设置两条规则，规则链接分别为http://域名/*与http://域名/(开启https强制跳转)。<br><img src="QQ20180310-232529.png" alt="page_rules"><br>4,耐心等待如下图位置的Status变为Active就可以了.快用域名访问你的blog试试吧,看看前面是不是加了把小绿锁呢!<br><img src="QQ20180310-225604.png" alt="dns_status"></p>
+
+      
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-WKWebView-iOS10" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
