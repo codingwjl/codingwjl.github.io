@@ -12,17 +12,17 @@
 <meta property="og:site_name" content="vindaspace">
 <meta property="og:description" content="前言选择这套方案是考虑到在godaddy注册可以不用备案,另外godaddy也支持支付宝和银联,这一点非常友好.而cloudflare可以免费实现https.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://vinda.space/2018/03/10/cloudflare-https/cloudflare-https/QQ20180310-231310.png">
+<meta property="og:image" content="https://vinda.space/2018/03/10/cloudflare-https/QQ20180310-231310.png">
 <meta property="og:image" content="https://vinda.space/2018/03/10/cloudflare-https/QQ20180310-231418.png">
 <meta property="og:image" content="https://vinda.space/2018/03/10/cloudflare-https/QQ20180310-232324.png">
 <meta property="og:image" content="https://vinda.space/2018/03/10/cloudflare-https/QQ20180310454578.png">
 <meta property="og:image" content="https://vinda.space/2018/03/10/cloudflare-https/QQ20180310-232529.png">
 <meta property="og:image" content="https://vinda.space/2018/03/10/cloudflare-https/QQ20180310-225604.png">
-<meta property="og:updated_time" content="2018-03-10T16:00:38.999Z">
+<meta property="og:updated_time" content="2018-03-10T16:01:45.494Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="godaddy+cloudflare实现域名访问+https">
 <meta name="twitter:description" content="前言选择这套方案是考虑到在godaddy注册可以不用备案,另外godaddy也支持支付宝和银联,这一点非常友好.而cloudflare可以免费实现https.">
-<meta name="twitter:image" content="https://vinda.space/2018/03/10/cloudflare-https/cloudflare-https/QQ20180310-231310.png">
+<meta name="twitter:image" content="https://vinda.space/2018/03/10/cloudflare-https/QQ20180310-231310.png">
   
     <link rel="alternative" href="/atom.xml" title="vindaspace" type="application/atom+xml">
   
@@ -244,7 +244,7 @@
           
         <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>选择这套方案是考虑到在godaddy注册可以不用备案,另外godaddy也支持支付宝和银联,这一点非常友好.而cloudflare可以免费实现https.<br><a id="more"></a></p>
 <h4 id="申请域名"><a href="#申请域名" class="headerlink" title="申请域名"></a>申请域名</h4><p>前往<a href="https://sso.godaddy.com" target="_blank" rel="noopener">godaddy</a>注册账号,搜索自己喜欢的域名,加入购物车,支付.</p>
-<h4 id="设置DNS"><a href="#设置DNS" class="headerlink" title="设置DNS"></a>设置DNS</h4><p>前往<a href="https://www.cloudflare.com" target="_blank" rel="noopener">cloudflare</a>注册账号,填入你申请的域名,然后你会得到cloudflare的DNS地址(lynn.ns.cloudflare.com, naomi.ns.cloudflare.com),把这两个DNS填写到godaddy的DNS主机.<br>进入godaddy域名管理器,点击DNS选择管理区域<br><img src="cloudflare-https/QQ20180310-231310.png" alt="管理区域"><br>输入自己的域名,点击搜索,在结果页下拉,选择域名服务器点击更改,填写cloudflare的DNS地址点击保存.至此godaddy操作完成.(等待DNS全球刷新需要0-72小时)<br><img src="QQ20180310-231418.png" alt="修改DNS"></p>
+<h4 id="设置DNS"><a href="#设置DNS" class="headerlink" title="设置DNS"></a>设置DNS</h4><p>前往<a href="https://www.cloudflare.com" target="_blank" rel="noopener">cloudflare</a>注册账号,填入你申请的域名,然后你会得到cloudflare的DNS地址(lynn.ns.cloudflare.com, naomi.ns.cloudflare.com),把这两个DNS填写到godaddy的DNS主机.<br>进入godaddy域名管理器,点击DNS选择管理区域<br><img src="QQ20180310-231310.png" alt="管理区域"><br>输入自己的域名,点击搜索,在结果页下拉,选择域名服务器点击更改,填写cloudflare的DNS地址点击保存.至此godaddy操作完成.(等待DNS全球刷新需要0-72小时)<br><img src="QQ20180310-231418.png" alt="修改DNS"></p>
 <h4 id="设置https"><a href="#设置https" class="headerlink" title="设置https"></a>设置https</h4><p>1,添加一个CNMAE指向自己的博客,添加一个A类型指向自己博客的ip地址(可以ping xxxx.github.io 得到ip)<br><img src="QQ20180310-232324.png" alt="设置dns"><br>Tips:本博客基于Hexo.所以直接在/source文件下建立CNAME文件.不要后缀名(mac可使用终端命令touch CNAME新建),然后打开CNAME文件写入你的域名,然后更新博客<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure></p>
 <p>2,然后切换到Crypto选择Flexible(因为GItHub Page不支持安装SSL证书,所以我们选择Flexible模式就可以)<br>Tips:在Cloudflare的“加密”中可以一键开启SSL，这个SSL总共四种模式：关闭、Flexible SSL、Full SSL、Full SSL (strict)、Strict (SSL-Only Origin Pull)。(更多关于cloudflare介绍<a href="https://www.freehao123.com/cloudflare-cdn-ssl/" target="_blank" rel="noopener">请点我</a>)</p>
 <blockquote>
@@ -309,7 +309,7 @@
         <p><span>本文标题:</span><a href="/2018/03/10/cloudflare-https/">godaddy+cloudflare实现域名访问+https</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 vindaspace 的个人博客">vindaspace</a></p>
         <p><span>发布时间:</span>2018年03月10日 - 22时53分</p>
-        <p><span>最后更新:</span>2018年03月11日 - 00时00分</p>
+        <p><span>最后更新:</span>2018年03月11日 - 00时01分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2018/03/10/cloudflare-https/" title="godaddy+cloudflare实现域名访问+https">https://vinda.space/2018/03/10/cloudflare-https/</a>
             <span class="copy-path" data-clipboard-text="原文: https://vinda.space/2018/03/10/cloudflare-https/　　作者: vindaspace" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
